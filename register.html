@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regisztráció</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- navigáció -->
+    <nav class="navbar navbar-expand-sm bg-success">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="./index.html" target="_self">Főoldal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./register.html" target="_self">Regisztráció</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="./login.html" target="_self">Belépés</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- regisztrációs űrlap -->
+    <form action="" class="was-validated">
+      <h1 class="mb-5">Regisztráció</h1>
+      <div class="form-group form-inline">
+        <label class="pr-3" for="name">Név</label>
+        <input type="name" class="form-control" placeholder="A neved" id="name" required />
+      </div>
+      <div class="form-group form-inline">
+        <label class="pr-3" for="email">Email cím</label>
+        <input type="email" class="form-control" placeholder="Az email címed" id="email" required />
+      </div>
+      <div class="form-group form-inline">
+        <label class="pr-3" for="pwd">Jelszó</label>
+        <input type="password" class="form-control" placeholder="A jelszavad" id="pwd" required />
+      </div>
+      <button type="submit" class="btn btn-primary mt-3" onclick="alert('Sikeres regsiztráció')">Regisztráció</button>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
